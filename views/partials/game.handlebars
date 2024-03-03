@@ -1,0 +1,25 @@
+<div class="game">
+  <h2>{{date}}</h2>
+  <h3>{{homeTeam.name}} {{homeTeamScore}} - {{awayTeamScore}} {{awayTeam.name}}</h3>
+  <div class="player-stats home">
+    <h4>{{homeTeam.name}} Players</h4>
+    <ul>
+      {{#each homeTeam.players}}
+        <li>
+          {{name}}: {{points}} points, {{rebounds}} rebounds, {{assists}} assists
+        </li>
+      {{/each}}
+    </ul>
+  </div><div class="game">
+  <h2>{{date}}</h2>
+  <h3>{{homeTeam.name}} {{homeTeamScore}} - {{awayTeamScore}} {{awayTeam.name}}</h3>
+  <div class="player-stats home">
+    <h4>{{homeTeam.name}} Players</h4>
+    <ul>
+      {{#each homeTeam.players}}
+        <li>
+          {{name}}: {{points}} points, {{rebounds}} rebounds, {{assists}} assists
+        </li>
+      {{/each}}
+    </ul>
+  </div>
