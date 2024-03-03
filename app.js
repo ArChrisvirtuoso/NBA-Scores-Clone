@@ -30,8 +30,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-//  To fetch the data and pass it to handlebars
-
+//  Fetch the data and pass it to handlebars
 app.get('/', async (req, res) => {
   const today = new Date();
   const games = await Game.find({ date: { $gte: today } }).populate('homeTeam awayTeam');
