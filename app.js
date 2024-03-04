@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const { engine } = require('express-handlebars');
 
+
 const app = express()
 
 // Connect to MongoDB
@@ -16,6 +17,8 @@ db.on('error', console.error.bind(console, 'connection error:'))
 db.once('open', () => {
   console.log('Connected to MongoDB')
 })
+//Import Game model after connecting to MongoDB
+const Game = require('./models/game');
 
 // Set up Handlebars as the template engine
 app.engine('handlebars',  engine({ extname: '.hbs', defaultLayout: "main"}))
