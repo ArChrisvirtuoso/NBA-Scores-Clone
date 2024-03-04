@@ -1,7 +1,7 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
-const exphbs = require('express-handlebars')
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const { engine } = require('express-handlebars');
 
 const app = express()
 
@@ -18,7 +18,7 @@ db.once('open', () => {
 })
 
 // Set up Handlebars as the template engine
-app.engine('handlebars', exphbs())
+app.engine('handlebars',  engine({ extname: '.hbs', defaultLayout: "main"}))
 app.set('view engine', 'handlebars')
 
 // Set up body-parser and static files
