@@ -1,0 +1,12 @@
+{
+  "name": "nba-scores-clone",
+  "version": "1.0.0",
+  "description": "this is a \"clone\" of the NBA.com site built using express, handlebars, mongoose and MongoDB. some code includes AI input.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
